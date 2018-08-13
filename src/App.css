@@ -1,0 +1,133 @@
+.image-gallery{
+  background-color: #e7e7e7;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imageHoverContainer {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: 15%;
+}
+
+.imageHover, .imageHoverTitle, .favButton, .imageHoverLine, .imageHoverOwner {
+  position: absolute;
+  z-index: 2;
+  visibility: hidden;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.imageHoverTitle { 
+  top: 10%;
+  left: 5%;
+  right: 5%;
+  width: 90%; 
+  padding-top:12px;
+  padding-bottom:12px;
+
+}
+.imageHoverLine{
+  border: 1px solid white;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  width: 50%; 
+
+}
+.imageHoverOwner{
+  top: 45%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  font-style: italic;
+}
+ .favButton{
+  border: 1px solid white;
+  border-radius: 20px;
+  bottom: 10%;
+  left: 20%;
+  right: 20%;
+  width: 60%; 
+  padding-top:12px;
+  padding-bottom:12px;
+}
+.favButton:hover, .favButtonActive{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+
+.imageHover {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  margin: 0;
+  font-size: 25px;
+  border-radius: 15px;
+}
+.singleImage:hover .imageHover {
+  visibility: visible;
+  opacity: 0.5;
+}
+.singleImage:hover .imageHoverTitle {
+  visibility: visible;
+}
+.singleImage:hover .favButton {
+  visibility: visible;
+}
+.singleImage:hover .imageHoverLine{
+  visibility: visible;
+}
+.singleImage:hover  .imageHoverOwner{
+  visibility: visible;
+}
+
+
+.singleImage{
+  float: left;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .singleImage {
+    width: 90%;
+    height: 300px;
+    margin: 2% 5%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .singleImage {
+    width: 45%;
+    height: 300px;
+    margin: 2% 2%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .singleImage {
+    width: 33%;
+    max-width: 350px;
+    height: 350px;
+    margin: 20px;
+  }
+  .image-gallery{
+    width: 1200px;
+  }
+}
+
+.singleImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+
+
+
+
